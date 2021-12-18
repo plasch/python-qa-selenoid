@@ -4,7 +4,7 @@ from selenium import webdriver
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
-    parser.addoption("--executor", action="store", default="192.168.100.6")
+    parser.addoption("--executor", action="store", default="0.0.0.0")
     parser.addoption("--mobile", action="store_true")
     parser.addoption("--videos", default=False)
     parser.addoption("--vnc", default=True)
